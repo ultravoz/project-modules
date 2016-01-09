@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="includes">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>some title</title>
+<link rel="shortcut icon" href="images/doctors/favicon_female.png" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/styles.min.css"/>
+<script type="text/javascript" src="js/jquery.js" ></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>  
+<script src="https://code.angularjs.org/1.4.5/angular-route.js"></script> 
+</head>
+<body>
+<div class="wrapper">
+
+	<div ng-include src=" 'html/navbar.html' "></div>
+
+<!--<div class="col-lg-6" id="filtered_specialists"></div>-->
+    <div style="position:relative">
+		<div class="container-full-bg" style="background-image:url('images/home/shutterstock_291144536.jpg');">
+			<div class="container special">
+		  		<div class="jumbotron">
+			  		<div class="row">
+				  		<div class="col-md-8 col-md-offset-2">
+				  			<div class="ud_title_home">
+					  			<h1>Reserva citas médicas</h1>
+						    	<h2>Busca un especialista en tu ciudad, compara<br> y reserva tu cita online</h2>
+					    	</div>
+				  		</div>
+			  		</div>
+			  </div>
+			</div>
+		</div>
+		<div class="ud_bg_search">
+			<form class="ud_form_search">
+				<input type="text" placeholder="Busca por nombre, especialidad, ciudad, enfermedad..">
+			</form>
+		</div>
+	</div>
+	<div class="container-full-bg" style="background-image:url('images/home/img-about.png');">
+		<div class="container">	
+	  		<div class="row">
+
+		  		<div class="col-md-6 hidden-xs"><img src="images/home/stock-photo-hand-holding-tablet-pc-isolated-on-white-background-112287014.png" class="img-responsive"></div>
+					<div class="col-md-6">list element</div>
+
+	  		</div>
+		</div>
+		
+	</div>
+	<div class="ud_doc_search">
+
+	<div class="container">	
+	  	<div class="row">
+
+			
+		    <form class="navbar-form navbar-left" role="search">
+		        
+		        <div class="form-group input-group" id="speciality-div">
+		            <input type="text" class="form-control" placeholder="Filter by speciality" id="filter-speciality" name="speciality">
+		        </div>
+		        <div class="form-group input-group" id="prefetch">
+		            <input type="text" class="form-control typeahead" placeholder="Filter by city" id="filter-city" name="city">
+		            <input type="hidden" id="city-id" name="city-id">
+		        </div>
+		        <div class="form-group input-group" id="insurance-div">
+		            <input type="text" class="form-control" placeholder="Filter by insurance policy" id="filter-insurance" name="insurance">
+		        </div>
+		        <div class="form-group input-group">
+		            <span class="input-group-btn">
+		                <button type="submit" class="btn btn-primary" style="height:34px;" id="filter-doctors">
+		                    <i class="fa fa-search"></i>
+		                </button>
+		            </span>
+		        </div>
+		    </form>
+		
+		    <form class="navbar-form navbar-left" role="search">
+		   
+		        
+		   
+		        <div class="form-group input-group" id="doctor-name-div">
+		            <input type="text" class="form-control" placeholder="Filter by doctor" id="filter-by-doctor" name="doctor_name">
+		        </div>
+		        <div class="form-group input-group">
+		            <span class="input-group-btn">
+		                <button type="submit" class="btn btn-primary" style="height:34px;" id="filter-by-doctor-button">
+		                    <i class="fa fa-search"></i>
+		                </button>
+		            </span>
+		        </div>
+		    </form>
+			
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+      
+    var miAplicacion = angular.module( 'includes' , [] )
+          
+</script>
+</body>
+</html>
+
