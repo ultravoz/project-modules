@@ -4,11 +4,37 @@ body {
   height: 100%;
   width: 100%;
 }
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul {
+  padding-top: 20px;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
 .navbar.ud_custom_nav {
   background-color: #fff;
   padding-top: 10px;
   border: none;
   margin-bottom: 10px;
+}
+.ud_inner {
+  display: inline-block;
+}
+.ud_inner.ud_home_icons {
+  position: absolute;
+}
+.ud_inner.ud_home_copy_icons {
+  padding-left: 80px;
+}
+.ud_home_list {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .btn {
   border: none;
@@ -18,6 +44,11 @@ body {
 }
 input {
   color: #9b9b9b;
+}
+.ud_subtitle {
+  padding-top: 50px;
+  color: #4a90e2;
+  font-weight: 700;
 }
 .jumbotron {
   background-color: inherit;
