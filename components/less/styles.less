@@ -69,16 +69,6 @@ img{
 
 input{ color:@text_form_colors; }
 
-.ud_text_box{
-	height:40px;
-	padding:5px;
-	min-width:300px;
-	font-size: @font-size-small;
-	&.ud_doc_filter_box{
-		margin-bottom:10px;
-	}
-}
-
 
 // +++++ TEMPLATING +++++++
 
@@ -124,10 +114,12 @@ input{ color:@text_form_colors; }
 		position:absolute;
 		left:50%;
 		top:25%;
-		min-width:50%;
+		width:40%;
 		transform: translate(-50%, 0);
 		input{
-			&:extend(.ud_text_box);
+			height:40px;
+			padding:5px;
+			font-size: @font-size-small;
 			.calc(width, ~'100% - 33px');
 		}
 	}
