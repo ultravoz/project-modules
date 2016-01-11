@@ -18,6 +18,17 @@ img{
 	width:100%;
 	height:100%;
 }
+h2{
+	font-size:@font-size-h2 - 8px;
+}
+
+// +++++++ REESPONSIVE TEXT +++++ 
+
+@media (min-width: @screen-sm) {  }
+
+@media (min-width: @screen-md) {  }
+
+@media (min-width: @screen-lg) {  }
 
 // //+++++++++ VARS +++++++++
 
@@ -39,11 +50,10 @@ img{
 // navbar
 
 .navbar{
+	margin-bottom:0;
 	&.ud_custom_nav{
 		background-color:#fff;
-		padding-top:@padding-large-vertical;
 		border:none;
-		margin-bottom: 10px;
 	}
 }
 
@@ -55,6 +65,9 @@ img{
 	}
 	&.ud_home_copy_icons{
 		padding-left:80px;
+	}
+	.ud_home_copy_content{
+		font-size: @font-size-h6;
 	}
 }
 .ud_home_list{
@@ -74,7 +87,8 @@ img{
 // form
 
 .ud_text_box{
-	height:40px;
+	height:30px;
+	@media (min-width: @screen-md) { height:40px; }
 	padding:5px;
 	font-size: @font-size-small;
 }
@@ -94,24 +108,32 @@ input{ color:@text_form_colors; }
 
 
 .jumbotron {background-color:inherit;}
-.container-full-bg {width:100%;height:100%;max-width:100%;background-position:center;background-size:cover;}
+.container-full-bg {
+	width:100%;height:100%;max-width:100%;background-position:center;background-size:cover;
+	padding-bottom: 50px;
+	@media (min-width: @screen-md) { padding-bottom: 0px }	
+}
 .container-full-bg .container, .container-full-bg .container .jumbotron {height:100%;width:100%;}
 
 
 // first module search
 
 .ud_title_home{
-	margin-top:100px;
-	margin-bottom:100px;
 	text-align: center;
-	h1{
-		color:@brand-white;
-		font-size: @font-size-extra-large;
-		font-weight: 700;
-	}
-	h2{
-		color:@brand-white;
-		font-size: @font-size-h2;
+	font-size: @font-size-h1;
+	color:@brand-white;
+	font-weight: 700;
+	@media (min-width: @screen-md) { 
+		margin-top:50px;
+		margin-bottom:100px;
+		.ud_big_title{
+			color:@brand-white;
+			font-size: @font-size-extra-large;
+			font-weight: 700;
+		}
+		h2{
+			font-size: @font-size-h2;
+		}
 	}
 }
 .ud_bg_search{
@@ -120,17 +142,22 @@ input{ color:@text_form_colors; }
 	left:0;
 	width: 100%;
 	height:20%;
-	background:url("../images/home/bg-search.png");
-	background-repeat: repeat;
+
 	.ud_form_search{
 		position:absolute;
 		left:50%;
-		top:25%;
 		min-width:50%;
 		transform: translate(-50%, 0);
 		input{
 			&:extend(.ud_text_box);
 			.calc(width, ~'100% - 10px');
+		}
+	}
+	@media (min-width: @screen-md) { 
+		background:url("../images/home/bg-search.png");
+		background-repeat: repeat;
+		.ud_form_search{
+			top:25%;
 		}
 	}
 }
@@ -143,24 +170,16 @@ input{ color:@text_form_colors; }
 	padding:1rem;
 }
 .ud_doc_filter{
-	h2{
-		text-align: center;
-		color:@brand-white;
-		font-weight: 700;
+	@media (min-width: @screen-md) { 
+		h2{
+			text-align: center;
+			color:@brand-white;
+			font-weight: 700;
+			font-size: @font-size-h2;
+		}
 	}
 	input{
 		width:100%;
 		height:40px;
 	}
 }
-
-
-html {
-  background: url("../images/background.gif") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-
-li a {
-  color: green; }
