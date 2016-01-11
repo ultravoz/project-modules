@@ -68,9 +68,13 @@ input {
   color: #9b9b9b;
 }
 .ud_subtitle {
-  padding-top: 50px;
   color: #4a90e2;
   font-weight: 700;
+}
+@media (min-width: 992px) {
+  .ud_subtitle {
+    padding-top: 50px;
+  }
 }
 .jumbotron {
   background-color: inherit;
