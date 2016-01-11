@@ -146,6 +146,14 @@ width:calc(100% - 10px);
     top: 25%;
   }
 }
+.col-sm-6 {
+  float: none;
+}
+@media (min-width: 992px) {
+  .col-sm-6 {
+    float: left;
+  }
+}
 .ud_doc_search {
   width: 100%;
   background-color: #4a90e2;
