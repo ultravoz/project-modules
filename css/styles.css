@@ -23,6 +23,10 @@ h2 {
 .ud_mBottom {
   margin-bottom: 10px;
 }
+.ud_negative_margin {
+  margin-left: -15px;
+  margin-right: -15px;
+}
 .navbar {
   margin-bottom: 0;
 }
@@ -159,15 +163,44 @@ width:calc(100% - 10px);
   background-color: #4a90e2;
   padding: 1rem;
 }
+.ud_doc_filter {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 700;
+}
+.ud_doc_filter .ud_box_filter_button {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: #9B9B9B;
+  color: #ffffff;
+}
 @media (min-width: 992px) {
   .ud_doc_filter h2 {
-    text-align: center;
-    color: #ffffff;
-    font-weight: 700;
     font-size: 30px;
   }
 }
 .ud_doc_filter input {
   width: 100%;
   height: 40px;
+}
+.ud_profesional_content {
+  text-align: center;
+  padding: 50px;
+}
+.ud_profesional_content h2 {
+  color: #00BCB4;
+}
+.ud_profesional_content p {
+  color: #9b9b9b;
+}
+.ud_profesional_content a {
+  color: #9b9b9b;
+  text-decoration: underline;
+  font-size: 14px;
+}
+.ud_profesional_content .ud_profesional_button {
+  background-color: #00BCB4;
+  color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
