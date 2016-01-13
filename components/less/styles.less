@@ -38,6 +38,7 @@ h2{
 
 @text_form_colors: #9B9B9B;
 @main-color: #4A90E2;
+@ud_color_3:#667682;
 
 
 // extends
@@ -221,4 +222,37 @@ input{ color:@text_form_colors; }
 		margin-top: 20px;
 		margin-bottom: 20px;
 	}
+}
+
+// forth block
+
+.ud_bg_forth_block{
+	color:@brand-white;
+	.panel-heading{
+		padding:0;
+		background-color:transparent;
+		color:@brand-white;
+		border-color:transparent;
+	}
+	.panel-title{
+		background-color:transparent;
+		a{
+			text-decoration: none;
+		}
+	}
+	.panel-body{
+		border-top-color:0;
+		border-top:0;
+	}
+	.panel-default{
+		border-color:@ud_color_3;
+	}
+	.panel{
+		background-color:transparent;
+	}
+	h2{
+		color:@brand-white;
+	}
+	background-color:@ud_color_3;
+	padding:1rem;
 }
