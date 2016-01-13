@@ -204,3 +204,33 @@ width:calc(100% - 10px);
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.ud_bg_forth_block {
+  color: #ffffff;
+  background-color: #667682;
+  padding: 1rem;
+}
+.ud_bg_forth_block .panel-heading {
+  padding: 0;
+  background-color: transparent;
+  color: #ffffff;
+  border-color: transparent;
+}
+.ud_bg_forth_block .panel-title {
+  background-color: transparent;
+}
+.ud_bg_forth_block .panel-title a {
+  text-decoration: none;
+}
+.ud_bg_forth_block .panel-body {
+  border-top-color: 0;
+  border-top: 0;
+}
+.ud_bg_forth_block .panel-default {
+  border-color: #667682;
+}
+.ud_bg_forth_block .panel {
+  background-color: transparent;
+}
+.ud_bg_forth_block h2 {
+  color: #ffffff;
+}
