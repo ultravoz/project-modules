@@ -34,6 +34,9 @@ h2 {
   background-color: #fff;
   border: none;
 }
+.navbar-right {
+  margin-right: 0;
+}
 .ud_inner {
   display: inline-block;
 }
