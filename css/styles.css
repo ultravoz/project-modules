@@ -101,6 +101,10 @@ input {
   height: 100%;
   width: 100%;
 }
+.ud_bg_first_block {
+  position: relative;
+  margin-top: 50px;
+}
 .ud_title_home {
   text-align: center;
   font-size: 36px;
@@ -207,7 +211,7 @@ width:calc(100% - 10px);
 .ud_bg_forth_block {
   color: #ffffff;
   background-color: #667682;
-  padding: 1rem;
+  padding: 1rem 1rem 3rem 1rem;
 }
 .ud_bg_forth_block .panel-heading {
   padding: 0;
@@ -233,4 +237,20 @@ width:calc(100% - 10px);
 }
 .ud_bg_forth_block h2 {
   color: #ffffff;
+}
+.ud_bg_footer {
+  background-color: #00bcb4;
+  height: 100px;
+  position: relative;
+}
+.ud_footer_circle {
+  background-color: #fff;
+  height: 63px;
+  -moz-border-radius: 75px;
+  -webkit-border-radius: 75px;
+  width: 63px;
+  left: 50%;
+  margin-top: -31px;
+  transform: translate(-50%, 0);
+  position: absolute;
 }
