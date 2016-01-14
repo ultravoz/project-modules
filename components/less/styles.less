@@ -39,6 +39,7 @@ h2{
 @text_form_colors: #9B9B9B;
 @main-color: #4A90E2;
 @ud_color_3:#667682;
+@ud_color_4:#00BCB4;
 
 
 // extends
@@ -123,6 +124,10 @@ input{ color:@text_form_colors; }
 
 
 // first module search
+.ud_bg_first_block{
+	position:relative;
+	margin-top:50px;
+}
 
 .ud_title_home{
 	text-align: center;
@@ -254,5 +259,24 @@ input{ color:@text_form_colors; }
 		color:@brand-white;
 	}
 	background-color:@ud_color_3;
-	padding:1rem;
+	padding:1rem 1rem 3rem 1rem;
+}
+
+// footer
+
+.ud_bg_footer{
+	background-color:@ud_color_4;
+	height:100px;
+	position:relative;
+}
+.ud_footer_circle{
+	background-color: #fff;
+	height: 63px;
+	-moz-border-radius:75px;
+	-webkit-border-radius: 75px;
+	width: 63px;
+	left:50%;
+	margin-top:-31px;
+	transform: translate(-50%, 0);
+	position:absolute;
 }
