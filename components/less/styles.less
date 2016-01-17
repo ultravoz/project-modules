@@ -34,6 +34,7 @@ h2{
 
 @ud_padding_rem: 1rem;
 
+
 // colors
 
 @text_form_colors: #9B9B9B;
@@ -50,6 +51,9 @@ h2{
 .ud_negative_margin{
 	margin-left:-15px;
 	margin-right:-15px;
+}
+.ud_center_align{
+	text-align:center;
 }
 
 // +++++++ OVERRIDES ++++++++
@@ -155,7 +159,10 @@ input{ color:@text_form_colors; }
 	bottom:0;
 	left:0;
 	width: 100%;
-	height:20%;
+	height:35%;
+	@media (min-width: @screen-md) { 
+		height:30%;
+	}
 
 	.ud_form_search{
 		position:absolute;
@@ -164,7 +171,32 @@ input{ color:@text_form_colors; }
 		transform: translate(-50%, 0);
 		input{
 			&:extend(.ud_text_box);
-			.calc(width, ~'100% - 10px');
+		}
+		p{
+			color:@brand-white;
+		}
+		.ud_form_search_icon{
+			right:75px;
+			top:5px;
+			position:absolute;
+			z-index: 9999;
+			.ud_skip{
+				position: absolute;
+				width: 1px;
+				height: 1px;
+				padding: 0;
+				margin: -1px;
+				overflow: hidden;
+				clip: rect(0, 0, 0, 0);
+				border: 0;
+				font-size: 11px
+			}
+		}
+		.ud_button_send{
+			height:30px;
+			@media (min-width: @screen-md) { 
+				height:40px;
+			}
 		}
 	}
 	@media (min-width: @screen-md) { 
