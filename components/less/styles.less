@@ -21,6 +21,9 @@ img{
 h2{
 	font-size:@font-size-h2 - 8px;
 }
+a, .btn-link{
+	color:#4A4A4A;
+}
 
 // +++++++ REESPONSIVE TEXT +++++ 
 
@@ -44,16 +47,31 @@ h2{
 
 
 // extends
+.ud_mBottom{ margin-bottom:10px; }
+.ud_negative_margin{ margin-left:-15px; margin-right:-15px; }
+.ud_mLeft{ margin-left:1rem; }
+.ud_mRight{ margin-right:1rem; }
+.ud_center_align{ text-align:center; }
+.ud_paddingBottom{ padding-bottom:1rem; }
+.ud_paddingTop{ padding-top:1rem; }
 
-.ud_mBottom{
-	margin-bottom:10px;
+// dividers
+.ud_thin_line_normal{
+	background-color:#dcdcdc;
+	margin-bottom:1.5rem;
+	&:extend(.clearfix);
 }
-.ud_negative_margin{
-	margin-left:-15px;
-	margin-right:-15px;
+.ud_thin_line_wide{
+	background-color:#dcdcdc;
+	margin-bottom:1.5rem;
+	margin-left:-1.5rem;
+	margin-right:-1.5rem;
+	&:extend(.clearfix);
 }
-.ud_center_align{
-	text-align:center;
+
+// custom links
+.ud_small_link{
+	font-size:@font-size-small;
 }
 
 // +++++++ OVERRIDES ++++++++
@@ -105,6 +123,10 @@ h2{
 	@media (min-width: @screen-md) { height:40px; }
 	padding:5px;
 	font-size: @font-size-small;
+}
+.ud_modal_form{
+	max-width:400px;
+	margin:0 auto;
 }
 
 input{ color:@text_form_colors; }
