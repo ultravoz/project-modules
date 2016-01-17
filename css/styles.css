@@ -20,6 +20,10 @@ img {
 h2 {
   font-size: 22px;
 }
+a,
+.btn-link {
+  color: #4A4A4A;
+}
 .ud_mBottom {
   margin-bottom: 10px;
 }
@@ -27,8 +31,33 @@ h2 {
   margin-left: -15px;
   margin-right: -15px;
 }
+.ud_mLeft {
+  margin-left: 1rem;
+}
+.ud_mRight {
+  margin-right: 1rem;
+}
 .ud_center_align {
   text-align: center;
+}
+.ud_paddingBottom {
+  padding-bottom: 1rem;
+}
+.ud_paddingTop {
+  padding-top: 1rem;
+}
+.ud_thin_line_normal {
+  background-color: #dcdcdc;
+  margin-bottom: 1.5rem;
+}
+.ud_thin_line_wide {
+  background-color: #dcdcdc;
+  margin-bottom: 1.5rem;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+}
+.ud_small_link {
+  font-size: 12px;
 }
 .navbar {
   margin-bottom: 0;
@@ -73,6 +102,10 @@ h2 {
   .ud_bg_search .ud_form_search input {
     height: 40px;
   }
+}
+.ud_modal_form {
+  max-width: 400px;
+  margin: 0 auto;
 }
 input {
   color: #9b9b9b;
