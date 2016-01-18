@@ -47,6 +47,23 @@ a,
 .ud_paddingTop {
   padding-top: 1rem;
 }
+.ud_hide_elements {
+  display: none;
+}
+.ud_skip {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  font-size: 11px;
+}
+.ud_custom_paragraph {
+  color: #ffffff;
+}
 .btn {
   border: none;
 }
@@ -183,25 +200,11 @@ input {
   min-width: 50%;
   transform: translate(-50%, 0);
 }
-.ud_bg_search .ud_form_search p {
-  color: #ffffff;
-}
 .ud_bg_search .ud_form_search .ud_form_search_icon {
   right: 75px;
   top: 5px;
   position: absolute;
   z-index: 9999;
-}
-.ud_bg_search .ud_form_search .ud_form_search_icon .ud_skip {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-  font-size: 11px;
 }
 .ud_bg_search .ud_form_search .ud_button_send {
   height: 30px;
@@ -301,12 +304,18 @@ input {
 .ud_bg_forth_block h2 {
   color: #ffffff;
 }
+.ud_main_search {
+  background-color: #00bcb4;
+  padding: 2rem;
+  position: relative;
+  margin-top: 50px;
+}
 .ud_bg_footer {
   background-color: #00bcb4;
   height: 100px;
   position: relative;
 }
-.ud_footer_circle {
+.ud_bg_footer .ud_footer_circle {
   background-color: #ffffff;
   height: 63px;
   -moz-border-radius: 75px;

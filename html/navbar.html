@@ -20,16 +20,31 @@
         <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
 
             <div class="nav navbar-nav navbar-right">
-                
-                    <li>
-                    <a href="#">Logout</a></li>
-                
-                    <li><a href="#" data-toggle="modal" data-target="#ud_login_modal">Login</a></li>
-                    <li><button class="btn btn-success navbar-btn ud_alta_btn" type="button" data-toggle="modal" data-target="#ud_register_modal">Alta/Gratis</button></li>
-                    <!--<li><a href="#" data-toggle="modal" data-target="#myProfessionalsModal" id="professionalModalToggle">Professional
-                    </a></li>-->
-               
+                <li><a href="html/profesionales/directorio.html">Profesionales</a></li>
+                <li><a href="#">Clínicas</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li>
+                <button type="button" href="#" data-toggle="modal" data-target="#ud_login_modal" class="btn btn-success navbar-btn ud_alta_btn ud_mRight">Acceder</button>
+                </li>
+                <li><button class="btn btn-success navbar-btn ud_alta_btn" type="button" data-toggle="modal" data-target="#ud_register_modal">Alta/Gratis</button></li>
             </div>
+
+
+            <!-- con la clase ud_hide_elements oculto elmentos, la puedes utilizar para cuando el usuario esta logeado o no pinta una navegación u otra -->
+            <div class="nav navbar-nav navbar-right ud_hide_elements">
+                <li><a href="#">Profesionales</a></li>
+                <li><a href="#">Clínicas</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li>
+                    <button type="button" href="#"class="btn btn-success navbar-btn ud_alta_btn">
+                        Desconectar
+                    </button>
+                </li>
+            </div>
+
+
         </div>
         <!-- /.navbar-collapse -->
     </div>

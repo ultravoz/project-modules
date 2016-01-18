@@ -59,6 +59,21 @@ a, .btn-link{
 .ud_center_align{ text-align:center; }
 .ud_paddingBottom{ padding-bottom:1rem; }
 .ud_paddingTop{ padding-top:1rem; }
+.ud_hide_elements{ display:none;}
+.ud_skip{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+	font-size: 11px
+}
+.ud_custom_paragraph{
+	color:@ud_white_color;
+}
 
 // CUSTOM BUTTON SHADOW
 
@@ -186,6 +201,7 @@ input{ color:@ud_soft_gray; }
 		}
 	}
 }
+
 .ud_bg_search{
 	position: absolute;
 	bottom:0;
@@ -204,25 +220,11 @@ input{ color:@ud_soft_gray; }
 		input{
 			&:extend(.ud_text_box);
 		}
-		p{
-			color:@ud_white_color;
-		}
 		.ud_form_search_icon{
 			right:75px;
 			top:5px;
 			position:absolute;
 			z-index: 9999;
-			.ud_skip{
-				position: absolute;
-				width: 1px;
-				height: 1px;
-				padding: 0;
-				margin: -1px;
-				overflow: hidden;
-				clip: rect(0, 0, 0, 0);
-				border: 0;
-				font-size: 11px
-			}
 		}
 		.ud_button_send{
 			height:30px;
@@ -326,21 +328,30 @@ input{ color:@ud_soft_gray; }
 	padding:1rem 1rem 3rem 1rem;
 }
 
+// ++++++++++++++++ MAIN SEARCH +++++++++++++++
+
+.ud_main_search{
+	background-color:@ud_primary_color;
+	padding:2rem;
+	position:relative;
+	margin-top:50px;
+}
+
 // footer
 
 .ud_bg_footer{
 	background-color:@ud_primary_color;
 	height:100px;
 	position:relative;
-}
-.ud_footer_circle{
-	background-color: @ud_white_color;
-	height: 63px;
-	-moz-border-radius:75px;
-	-webkit-border-radius: 75px;
-	width: 63px;
-	left:50%;
-	margin-top:-31px;
-	transform: translate(-50%, 0);
-	position:absolute;
+	.ud_footer_circle{
+		background-color: @ud_white_color;
+		height: 63px;
+		-moz-border-radius:75px;
+		-webkit-border-radius: 75px;
+		width: 63px;
+		left:50%;
+		margin-top:-31px;
+		transform: translate(-50%, 0);
+		position:absolute;
+	}
 }
