@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="includes">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>some title</title>
+<link rel="shortcut icon" href="images/doctors/favicon_female.png" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/styles.min.css"/>
+<script type="text/javascript" src="../../js/jquery.js" ></script>
+<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>  
+<script src="https://code.angularjs.org/1.4.5/angular-route.js"></script> 
+</head>
+<body>
+<div class="wrapper">
+
+	<!-- main nav -->
+	<div ng-include src=" '../navbar.html' "></div>
+	<!-- main search -->
+	<div ng-include src=" '../main-search.html' "></div>
+	<!-- footer 
+	<div ng-include src=" '../footer.html' "></div>
+	-->
+
+</div>
+<script>
+      
+    var miAplicacion = angular.module( 'includes' , [] );
+
+</script>
+</body>
+</html>
