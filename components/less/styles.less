@@ -367,7 +367,7 @@ ul.ud_filter_doctors{
 }
 
 // ++++++++++++++++ PROFESIONALS ++++++++++++++
-.ud_profesional_dates{
+.ud_profesional_info{
 	margin-bottom:5px;
 	.ud_profesional_name{
 		color:@ud_primary_color;
@@ -387,6 +387,16 @@ ul.ud_filter_doctors{
 }
 
 // custom cols
+.col-sm-2{
+	&.ud_custom_col_img{
+		@media (max-width: @screen-sm) { width:30%; float:left; }
+	}
+}
+.col-sm-7{
+	&.ud_custom_col_info{
+		@media (max-width: @screen-sm) { width:70%; float:left; }
+	}
+}
 
 // RESPONSIVE MAP
 .google-maps {

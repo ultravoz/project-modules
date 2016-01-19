@@ -336,13 +336,13 @@ ul.ud_filter_doctors {
   position: relative;
   margin-top: 50px;
 }
-.ud_profesional_dates {
+.ud_profesional_info {
   margin-bottom: 5px;
 }
-.ud_profesional_dates .ud_profesional_name {
+.ud_profesional_info .ud_profesional_name {
   color: #00bcb4;
 }
-.ud_profesional_dates .ud_profesional_profesion {
+.ud_profesional_info .ud_profesional_profesion {
   font-size: 12px;
 }
 .ud_profesional_places {
@@ -357,6 +357,18 @@ ul.ud_filter_doctors {
 }
 .ud_profesional_places .fa-map-marker {
   padding-right: 5px;
+}
+@media (max-width: 768px) {
+  .col-sm-2.ud_custom_col_img {
+    width: 30%;
+    float: left;
+  }
+}
+@media (max-width: 768px) {
+  .col-sm-7.ud_custom_col_info {
+    width: 70%;
+    float: left;
+  }
 }
 .google-maps {
   position: relative;
