@@ -12,9 +12,11 @@ ul,li {
 	padding:0;
 	margin:0;
 }
-ul{
-	padding-top:20px;
+dt,dl{
+	margin:0;
+	padding:0;
 }
+
 img{
 	width:100%;
 	height:100%;
@@ -52,7 +54,8 @@ a, .btn-link{
 
 //+++++++++ HELPERS AND EXTENDS +++++++++
 
-.ud_mBottom{ margin-bottom:10px; }
+.ud_mTop{ margin-bottom:1rem; }
+.ud_mBottom{ margin-bottom:1rem; }
 .ud_negative_margin{ margin-left:-15px; margin-right:-15px; }
 .ud_mLeft{ margin-left:1rem; }
 .ud_mRight{ margin-right:1rem; }
@@ -73,6 +76,29 @@ a, .btn-link{
 }
 .ud_custom_paragraph{
 	color:@ud_white_color;
+}
+.ud_list_inline{
+	li{
+		display: inline-block;
+	}
+}
+
+// BREADCRUMBS
+
+.ud_breadcrumb{
+	font-size:@font-size-h6;
+	color:@ud_dark_gray;
+	padding:15px;
+	span{
+		display: inline-block;
+		a{
+			font-weight: 700;
+		}
+	}
+	.ud_bc_divider{
+		padding-left:5px;
+		padding-right:5px;
+	}
 }
 
 // CUSTOM BUTTON SHADOW
@@ -253,6 +279,9 @@ input{ color:@ud_soft_gray; }
 	background-color:@ud_secondary_color;
 	padding:1rem;
 }
+ul.ud_filter_doctors{
+	padding-top:20px;
+}
 .ud_doc_filter{
 	text-align: center;
 	color:@ud_white_color;
@@ -336,6 +365,43 @@ input{ color:@ud_soft_gray; }
 	position:relative;
 	margin-top:50px;
 }
+
+// ++++++++++++++++ PROFESIONALS ++++++++++++++
+.ud_profesional_dates{
+	margin-bottom:5px;
+	.ud_profesional_name{
+		color:@ud_primary_color;
+	}
+	.ud_profesional_profesion{
+		font-size: @font-size-h6;
+	}
+}
+.ud_profesional_places{
+	font-size:@font-size-h6;
+	dt,dd,ul,li,span{
+		display: inline-block;
+	}
+	.fa-map-marker{
+		padding-right:5px;
+	}
+}
+
+// RESPONSIVE MAP
+.google-maps {
+    position: relative;
+    padding-bottom: 15%; 
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+}
+
+
+
 
 // footer
 

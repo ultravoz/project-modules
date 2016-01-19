@@ -10,8 +10,10 @@ li {
   padding: 0;
   margin: 0;
 }
-ul {
-  padding-top: 20px;
+dt,
+dl {
+  margin: 0;
+  padding: 0;
 }
 img {
   width: 100%;
@@ -25,8 +27,11 @@ a,
   color: #4a4a4a;
   text-decoration: none;
 }
+.ud_mTop {
+  margin-bottom: 1rem;
+}
 .ud_mBottom {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 .ud_negative_margin {
   margin-left: -15px;
@@ -63,6 +68,24 @@ a,
 }
 .ud_custom_paragraph {
   color: #ffffff;
+}
+.ud_list_inline li {
+  display: inline-block;
+}
+.ud_breadcrumb {
+  font-size: 12px;
+  color: #4a4a4a;
+  padding: 15px;
+}
+.ud_breadcrumb span {
+  display: inline-block;
+}
+.ud_breadcrumb span a {
+  font-weight: 700;
+}
+.ud_breadcrumb .ud_bc_divider {
+  padding-left: 5px;
+  padding-right: 5px;
 }
 .btn {
   border: none;
@@ -236,6 +259,9 @@ input {
   background-color: #4a90e2;
   padding: 1rem;
 }
+ul.ud_filter_doctors {
+  padding-top: 20px;
+}
 .ud_doc_filter {
   text-align: center;
   color: #ffffff;
@@ -309,6 +335,40 @@ input {
   padding: 2rem;
   position: relative;
   margin-top: 50px;
+}
+.ud_profesional_dates {
+  margin-bottom: 5px;
+}
+.ud_profesional_dates .ud_profesional_name {
+  color: #00bcb4;
+}
+.ud_profesional_dates .ud_profesional_profesion {
+  font-size: 12px;
+}
+.ud_profesional_places {
+  font-size: 12px;
+}
+.ud_profesional_places dt,
+.ud_profesional_places dd,
+.ud_profesional_places ul,
+.ud_profesional_places li,
+.ud_profesional_places span {
+  display: inline-block;
+}
+.ud_profesional_places .fa-map-marker {
+  padding-right: 5px;
+}
+.google-maps {
+  position: relative;
+  padding-bottom: 15%;
+  height: 0;
+  overflow: hidden;
+}
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
 }
 .ud_bg_footer {
   background-color: #00bcb4;
